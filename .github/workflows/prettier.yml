@@ -28,8 +28,10 @@ jobs:
           cache: 'pnpm'
 
       # Instala PNPM (esto se omite si se usa NPM)
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
 
       # Instala las dependencias del pnpm-lock
       # (el comando cambia si se usa NPM)
