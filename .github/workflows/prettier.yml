@@ -27,11 +27,11 @@ jobs:
           node-version: '20'
           cache: 'pnpm'
 
-      # Instala PNPM (esto se omite si se usa NPM)
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 10
+      # Habilita Corepack y activa PNPM
+      - name: Enable corepack and prepare pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@10 --activate
 
       # Instala las dependencias del pnpm-lock
       # (el comando cambia si se usa NPM)
