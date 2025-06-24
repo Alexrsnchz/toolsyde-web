@@ -18,6 +18,10 @@ jobs:
 
       # Instala dicha Node.js en dicha MV 
       # (usar la misma versión que en local)
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10
       
       # Necesario porque Prettier está hecho en JS
       # y se ejecuta en Node
@@ -26,12 +30,6 @@ jobs:
         with:
           node-version: '20'
           cache: 'pnpm'
-
-      # Habilita Corepack y activa PNPM
-      - name: Enable corepack and prepare pnpm
-        run: |
-          corepack enable
-          corepack prepare pnpm@10 --activate
 
       # Instala las dependencias del pnpm-lock
       # (el comando cambia si se usa NPM)
