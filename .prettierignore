@@ -1,4 +1,5 @@
 node_modules
+.github/*
 public
 pnpm-lock.yaml
 pnpm-workspace.yaml
