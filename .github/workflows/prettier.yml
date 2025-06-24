@@ -1,0 +1,55 @@
+name: Prettier Autoformat on Merge to Main
+
+on:
+  push:
+    branches: [main]  # Solo se ejecuta al hacer push/merge a main
+
+jobs:
+  autoformat:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Clona el repositorio en la MV de GitHub Actions 
+      # (sin esto, GitHub actions no tiene acceso al código)
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Instala dicha Node.js en dicha MV 
+      # (usar la misma versión que en local)
+      
+      # Necesario porque Prettier está hecho en JS
+      # y se ejecuta en Node
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      # Instala PNPM (esto se omite si se usa NPM)
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      # Instala las dependencias del pnpm-lock
+      # (el comando cambia si se usa NPM)
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # Ejecuta prettier usando PNPM
+      - name: Run Prettier
+        run: pnpm prettier --write .
+
+      # Las dos primeras líneas configuran Git para que
+      # se sepa quien está haciendo el commit usando
+      # un usuario genérico especial (github-actions[bot])
+      
+      # Añade los cambios, verifica si hay algo que hacer
+      # commit y hace push de los cambios
+      - name: Commit and push if changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --cached --quiet || git commit -m "chore: Auto-format with Prettier"
+          git push
