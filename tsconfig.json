@@ -9,7 +9,8 @@
       "@styles/*": ["src/styles/*"],
       "@icons/*": ["src/assets/icons/*"],
       "@data/*": ["src/assets/data/*"],
-      "@components/*": ["src/components/*"]
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"]
     },
     "moduleResolution": "node",
     "noEmit": true,

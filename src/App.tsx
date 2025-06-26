@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router'
-import Home from './pages/Home.tsx'
-import NavigationLayout from './components/layouts/NavigationLayout.tsx'
+import NavigationLayout from '@components/layouts/NavigationLayout.tsx'
+import Home from '@pages/Home.tsx'
 
 function App() {
   return (
