@@ -14,9 +14,7 @@ export default function Sidebar() {
           {/* Logo here */}
           <h1>Toolsyde</h1>
         </div>
-        <div>
-          {/* Services here */}
-        </div>
+        <div>{/* Services here */}</div>
       </nav>
     </aside>
   )
