@@ -1,5 +1,5 @@
-import { Route, Routes } from 'react-router';
-import Home from './pages/Home.tsx';
+import { Route, Routes } from 'react-router'
+import Home from './pages/Home.tsx'
 
 function App() {
   return (
@@ -9,4 +9,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
