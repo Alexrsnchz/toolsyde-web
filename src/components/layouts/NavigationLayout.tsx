@@ -16,6 +16,5 @@ export default function NavigationLayout() {
         <Footer />
       </footer>
     </>
-
   )
 }
