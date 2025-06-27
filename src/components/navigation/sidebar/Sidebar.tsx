@@ -1,4 +1,10 @@
-import { BookIcon, CheckListIcon, FrameIcon, LayoutIcon, ToolsydeIcon } from '@icons/Icons.tsx'
+import {
+  BookIcon,
+  CheckListIcon,
+  FrameIcon,
+  LayoutIcon,
+  ToolsydeIcon,
+} from '@icons/Icons.tsx'
 
 export default function Sidebar() {
   return (
