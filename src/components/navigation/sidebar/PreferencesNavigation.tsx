@@ -12,7 +12,7 @@ export default function PreferencesNavigation() {
 
         <span className="absolute left-full top-1/2 -translate-y-1/2 px-2 py-1 ml-3 rounded-md shadow-md opacity-0 group-hover:opacity-100 bg-white whitespace-nowrap text-sm font-medium transition-opacity duration-200 ease-in-out">
           Configuración
-          </span>
+        </span>
       </Link>
 
       <button className="relative p-2 rounded-md hover:shadow-md group border border-transparent hover:border-gray-200 hover:bg-white transition-all duration-200 ease-in-out">
@@ -20,11 +20,10 @@ export default function PreferencesNavigation() {
 
         <span className="absolute left-full top-1/2 -translate-y-1/2 px-2 py-1 ml-3 rounded-md shadow-md opacity-0 group-hover:opacity-100 bg-white whitespace-nowrap text-sm font-medium transition-opacity duration-200 ease-in-out">
           Tema claro
-          </span>
+        </span>
       </button>
 
-      <button className="relative p-5 rounded-full cursor-pointer bg-gray-500">
-      </button>
+      <button className="relative p-5 rounded-full cursor-pointer bg-gray-500"></button>
     </div>
   )
 }
