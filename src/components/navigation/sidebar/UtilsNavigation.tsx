@@ -1,11 +1,11 @@
 import { utils } from '@data/utilsData.ts'
 import { Link } from 'react-router'
-import type { UtilProps } from '../../../types/types.ts'
+import type { LinkUtilProps } from '../../../types/types.ts'
 
 export default function UtilsNavigation() {
   return (
     <div className="flex flex-col items-center gap-3 w-full">
-      {utils.map(({ icon: Icon, tooltip, link }: UtilProps) => (
+      {utils.map(({ icon: Icon, tooltip, link }: LinkUtilProps) => (
         <Link
           to={link}
           className="relative p-2 rounded-md hover:shadow-md group border border-transparent hover:border-gray-200 hover:bg-white transition-all duration-200 ease-in-out"
