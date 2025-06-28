@@ -3,7 +3,7 @@ import { BellIcon, InboxIcon } from '@icons/Icons.tsx'
 export const info = [
   {
     icon: BellIcon,
-    tooltip: 'Notificaciones'
+    tooltip: 'Notificaciones',
   },
   {
     icon: InboxIcon,
