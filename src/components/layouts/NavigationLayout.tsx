@@ -7,7 +7,7 @@ export default function NavigationLayout() {
     <>
       <div className="flex min-h-screen">
         <Sidebar />
-        <main className="flex-1">
+        <main className="flex-1 px-6 py-3 max-w-7xl mx-auto">
           <Outlet />
         </main>
       </div>
