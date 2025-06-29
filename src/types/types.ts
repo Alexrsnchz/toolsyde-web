@@ -5,7 +5,7 @@ export interface IconProps {
 }
 
 export interface UtilProps {
-  icon: React.ComponentType<{ className?: string }>
+  icon: React.ComponentType<IconProps>
   tooltip: string
 }
 
