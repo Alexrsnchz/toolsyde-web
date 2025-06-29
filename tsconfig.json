@@ -12,7 +12,7 @@
       "@components/*": ["src/components/*"],
       "@pages/*": ["src/pages/*"]
     },
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "noEmit": true,
     "skipLibCheck": true,
     "useDefineForClassFields": true,
