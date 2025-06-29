@@ -23,7 +23,7 @@ export default function PreferencesNavigation() {
         </span>
       </button>
 
-      <button className="relative p-5 rounded-full cursor-pointer bg-gray-500"></button>
+      <button className="relative p-5 rounded-md cursor-pointer bg-gray-500"></button>
     </div>
   )
 }

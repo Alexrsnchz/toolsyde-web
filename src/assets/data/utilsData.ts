@@ -2,28 +2,34 @@ import {
   BookIcon,
   CheckListIcon,
   FrameIcon,
+  GeneratorIcon,
   LayoutIcon,
 } from '@icons/Icons.tsx'
 
 export const utils = [
   {
     icon: LayoutIcon,
-    tooltip: 'Generadores',
-    link: '/generators',
+    tooltip: 'Toolbox',
+    link: '/toolbox',
+  },
+  {
+    icon: GeneratorIcon,
+    tooltip: 'Generators',
+    link: '/toolbox/generators',
   },
   {
     icon: CheckListIcon,
-    tooltip: 'Validadores',
-    link: '/validators',
+    tooltip: 'Validators',
+    link: '/toolbox/validators',
   },
   {
     icon: FrameIcon,
-    tooltip: 'Utilidades de UI',
-    link: '/ui-tools',
+    tooltip: 'UI Tools',
+    link: '/toolbox/ui-tools',
   },
   {
     icon: BookIcon,
-    tooltip: 'Recursos',
-    link: '/resources',
+    tooltip: 'Resources',
+    link: '/toolbox/resources',
   },
 ]

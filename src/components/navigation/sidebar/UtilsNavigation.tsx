@@ -1,6 +1,6 @@
 import { utils } from '@data/utilsData.ts'
 import { Link } from 'react-router'
-import type { LinkUtilProps } from '../../../types/types.ts'
+import type { LinkUtilProps } from '@customTypes/types.ts'
 
 export default function UtilsNavigation() {
   return (

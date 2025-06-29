@@ -1,5 +1,5 @@
 import { info } from '@data/infoData.ts'
-import type { UtilProps } from '../../../types/types.ts'
+import type { UtilProps } from '@customTypes/types.ts'
 
 export default function InfoNavigation() {
   return (
