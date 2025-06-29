@@ -10,7 +10,8 @@
       "@icons/*": ["src/assets/icons/*"],
       "@data/*": ["src/assets/data/*"],
       "@components/*": ["src/components/*"],
-      "@pages/*": ["src/pages/*"]
+      "@pages/*": ["src/pages/*"],
+      "@customTypes/*": ["src/types/*"]
     },
     "moduleResolution": "bundler",
     "noEmit": true,
