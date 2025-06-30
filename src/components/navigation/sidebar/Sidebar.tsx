@@ -1,32 +1,46 @@
 import { ToolsydeIcon } from '@icons/Icons.tsx'
-import InfoNavigation from '@components/navigation/sidebar/InfoNavigation.tsx'
-import UtilsNavigation from '@components/navigation/sidebar/UtilsNavigation.tsx'
-import PreferencesNavigation from '@components/navigation/sidebar/PreferencesNavigation.tsx'
+import {
+  Preferences,
+  Utils,
+} from '@components/navigation/sidebar/NavigationItems.tsx'
+import { useState } from 'react'
 
 export default function Sidebar() {
+  const [isExpanded, setIsExpanded] = useState(true)
+
+  const expandSidebar = () => {
+    setIsExpanded(!isExpanded)
+  }
+
   return (
-    <aside className="p-3 border border-gray-300 bg-gray-200">
-      <nav className="flex flex-col justify-between h-full">
+    <aside
+      className={`${isExpanded ? 'w-55' : 'w-16'} border-r-2 border-gray-300 bg-gray-200/30 transition-all duration-300 ease-in-out`}
+    >
+      <nav className="flex flex-col justify-between px-3 py-5 h-full">
         <div>
-          <div className="p-2 rounded-md bg-gray-300">
-            <ToolsydeIcon className="h-6 w-6 text-gray-700" />
+          <div className="flex items-start gap-3">
+            <div className="p-2 rounded-md bg-purple-500/40">
+              <ToolsydeIcon className="size-5 text-purple-800" />
+            </div>
+
+            {isExpanded && (
+              <span className="text-lg font-bold text-gray-800">Toolsyde</span>
+            )}
           </div>
 
-          <hr className="my-5 border-t border-gray-700" />
+          <hr className="my-5 border-t-2 border-gray-300" />
 
-          <InfoNavigation />
-
-          <hr className="my-5 border-t border-gray-700" />
-
-          <UtilsNavigation />
+          <Utils isExpanded={isExpanded} />
         </div>
-
         <div>
-          <hr className="my-5 border-t border-gray-700" />
+          <hr className="my-5 border-t-2 border-gray-300" />
 
-          <PreferencesNavigation />
+          <Preferences isExpanded={isExpanded} />
         </div>
       </nav>
+      <button onClick={expandSidebar} className="px-2 py-1 bg-gray-500">
+        Change
+      </button>
     </aside>
   )
 }

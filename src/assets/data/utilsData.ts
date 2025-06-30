@@ -6,30 +6,30 @@ import {
   LayoutIcon,
 } from '@icons/Icons.tsx'
 
-export const utils = [
+export const utilsData = [
   {
     icon: LayoutIcon,
-    tooltip: 'Toolbox',
+    text: 'Toolbox',
     link: '/toolbox',
   },
   {
     icon: GeneratorIcon,
-    tooltip: 'Generators',
+    text: 'Generators',
     link: '/toolbox/generators',
   },
   {
     icon: CheckListIcon,
-    tooltip: 'Validators',
+    text: 'Validators',
     link: '/toolbox/validators',
   },
   {
     icon: FrameIcon,
-    tooltip: 'UI Tools',
+    text: 'UI Tools',
     link: '/toolbox/ui-tools',
   },
   {
     icon: BookIcon,
-    tooltip: 'Resources',
+    text: 'Resources',
     link: '/toolbox/resources',
   },
 ]

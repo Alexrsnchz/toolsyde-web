@@ -4,9 +4,13 @@ export interface IconProps {
   className?: string
 }
 
+export interface SidebarProps {
+  isExpanded: boolean
+}
+
 export interface UtilProps {
   icon: React.ComponentType<IconProps>
-  tooltip: string
+  text: string
 }
 
 export interface LinkUtilProps extends UtilProps {
