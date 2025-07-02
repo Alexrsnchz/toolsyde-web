@@ -1,0 +1,34 @@
+import { UseFormRegister, FieldError } from 'react-hook-form'
+
+type FormInputProps = {
+  label: string
+  placeholder?: string
+  type?: string
+  register: ReturnType<UseFormRegister<any>>
+  error?: FieldError
+}
+
+const FormInput: React.FC<FormInputProps> = ({
+  label,
+  placeholder,
+  type = 'text',
+  register,
+  error,
+}) => {
+  return (
+    <div>
+      <label className="block text-sm font-medium text-gray-900 mb-2">
+        {label}
+      </label>
+      <input
+        type={type}
+        {...register}
+        placeholder={placeholder}
+        className="text-sm p-2 rounded-md border border-gray-300 w-full focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-transparent"
+      />
+      {error && <span className="text-xs text-red-500">{error.message}</span>}
+    </div>
+  )
+}
+
+export default FormInput
