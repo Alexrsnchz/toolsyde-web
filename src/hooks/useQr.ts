@@ -14,9 +14,11 @@ export default function useQr() {
     return () => {
       if (qrBlobUrl) URL.revokeObjectURL(qrBlobUrl)
     }
-  }, [qrBlobUrl])
+  }, [])
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    if (qrBlobUrl) URL.revokeObjectURL(qrBlobUrl)
+
     setIsLoading(true)
     setQrBlobUrl(null)
 
@@ -50,5 +52,11 @@ export default function useQr() {
     document.body.removeChild(link)
   }
 
-  return { qrBlobUrl, isLoading, onSubmit, onDownloadQr }
+  const resetQr = () => {
+    if (qrBlobUrl) URL.revokeObjectURL(qrBlobUrl)
+    setQrBlobUrl(null)
+    setIsLoading(false)
+  }
+
+  return { qrBlobUrl, isLoading, onSubmit, onDownloadQr, resetQr }
 }

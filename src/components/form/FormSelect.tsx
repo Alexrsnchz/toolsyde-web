@@ -28,7 +28,6 @@ const FormSelect: React.FC<FormSelectProps> = ({
       <select
         {...register}
         className="text-sm p-2 rounded-md border border-gray-300 w-full focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-transparent bg-white"
-        defaultValue=""
       >
         {placeholder && (
           <option value="" disabled hidden>
