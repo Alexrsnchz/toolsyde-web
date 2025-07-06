@@ -7,11 +7,12 @@
     "baseUrl": ".",
     "paths": {
       "@styles/*": ["src/styles/*"],
-      "@icons/*": ["src/assets/icons/*"],
+      "@customTypes/*": ["src/types/*"],
       "@data/*": ["src/assets/data/*"],
+      "@functions/*": ["src/assets/functions/*"],
+      "@icons/*": ["src/assets/icons/*"],
       "@components/*": ["src/components/*"],
-      "@pages/*": ["src/pages/*"],
-      "@customTypes/*": ["src/types/*"]
+      "@pages/*": ["src/pages/*"]
     },
     "moduleResolution": "bundler",
     "noEmit": true,
