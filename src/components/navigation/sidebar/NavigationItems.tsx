@@ -9,12 +9,12 @@ export function Utils({ isExpanded }: SidebarProps) {
       {utilsData.map(({ icon: Icon, text, link }: LinkUtilProps, index) => (
         <li
           key={index}
-          className="p-2 w-full rounded-md hover:shadow-md group border border-transparent hover:border-purple-300 hover:bg-purple-950/30"
+          className="w-full rounded-md hover:shadow-md group border border-transparent hover:border-purple-300 hover:bg-purple-950/30"
         >
           <NavLink
             to={link}
             aria-label={`${text} page`}
-            className="flex items-center w-full"
+            className="flex items-center p-2 w-full"
           >
             <Icon className="size-5 shrink-0 text-gray-700 group-hover:text-purple-800" />
 
@@ -43,13 +43,13 @@ export function Preferences({ isExpanded }: SidebarProps) {
       {prefData.map(({ icon: Icon, text, link, onClick }, index) => (
         <li
           key={index}
-          className="p-2 w-full rounded-md hover:shadow-md group border border-transparent hover:border-purple-300 hover:bg-purple-950/30"
+          className="w-full rounded-md hover:shadow-md group border border-transparent hover:border-purple-300 hover:bg-purple-950/30"
         >
           {link ? (
             <NavLink
               to={link}
               aria-label={`${text} page`}
-              className="flex items-center w-full"
+              className="flex items-center p-2 w-full"
             >
               <Icon className="size-5 shrink-0 text-gray-700 group-hover:text-purple-800" />
 
@@ -68,7 +68,7 @@ export function Preferences({ isExpanded }: SidebarProps) {
             <button
               onClick={onClick}
               aria-label={`Switch to ${text}`}
-              className="flex items-center w-full"
+              className="flex items-center p-2 w-full"
             >
               <Icon className="size-5 shrink-0 text-gray-700 group-hover:text-purple-800" />
 
