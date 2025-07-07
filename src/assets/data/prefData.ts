@@ -12,6 +12,6 @@ export const prefData = [
   {
     icon: theme === 'dark' ? MoonIcon : SunIcon,
     text: theme === 'dark' ? 'Dark theme' : 'Light theme',
-    onClick: SwitchTheme,
+    handleClick: SwitchTheme,
   },
 ]
