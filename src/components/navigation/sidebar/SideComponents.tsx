@@ -1,7 +1,12 @@
 import { NavLink } from 'react-router'
 import type { LinkUtilProps, UtilProps } from '@customTypes/sidebarTypes.ts'
 
-export function SideLink({ icon: Icon, text, link, isExpanded }: LinkUtilProps) {
+export function SideLink({
+  icon: Icon,
+  text,
+  link,
+  isExpanded,
+}: LinkUtilProps) {
   return (
     <NavLink
       to={link}
@@ -25,7 +30,12 @@ export function SideLink({ icon: Icon, text, link, isExpanded }: LinkUtilProps) 
   )
 }
 
-export function SideButton({ icon: Icon, text, handleClick, isExpanded }: UtilProps) {
+export function SideButton({
+  icon: Icon,
+  text,
+  handleClick,
+  isExpanded,
+}: UtilProps) {
   return (
     <button
       type="button"
