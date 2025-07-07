@@ -1,10 +1,6 @@
 import { useEffect, useState } from 'react'
 import { SubmitHandler } from 'react-hook-form'
-
-type Inputs = {
-  url: string
-  size: '128' | '256' | '512' | '1024'
-}
+import type { QRFormInputs } from '@customTypes/types.ts'
 
 export default function useQr() {
   const [qrBlobUrl, setQrBlobUrl] = useState<string | null>(null)
@@ -14,9 +10,9 @@ export default function useQr() {
     return () => {
       if (qrBlobUrl) URL.revokeObjectURL(qrBlobUrl)
     }
-  }, [])
+  })
 
-  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+  const onSubmit: SubmitHandler<QRFormInputs> = async (data) => {
     if (qrBlobUrl) URL.revokeObjectURL(qrBlobUrl)
 
     setIsLoading(true)

@@ -1,20 +1,12 @@
-import { UseFormRegister, FieldError } from 'react-hook-form'
+import type { FormInputProps } from '@customTypes/types.ts'
 
-type FormInputProps = {
-  label: string
-  placeholder?: string
-  type?: string
-  register: ReturnType<UseFormRegister<any>>
-  error?: FieldError
-}
-
-const FormInput: React.FC<FormInputProps> = ({
+const FormInput = ({
   label,
   placeholder,
   type = 'text',
   register,
   error,
-}) => {
+}: FormInputProps) => {
   return (
     <div>
       <label className="block text-sm font-medium text-gray-900 mb-2">

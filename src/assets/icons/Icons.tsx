@@ -22,7 +22,7 @@ export function ToolsydeIcon({ className }: IconProps) {
   )
 }
 
-export function BellIcon({ className }: IconProps) {
+export function ContractedPanelIcon({ className }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -36,66 +36,9 @@ export function BellIcon({ className }: IconProps) {
       stroke-linejoin="round"
       className={className}
     >
-      <path d="M10.268 21a2 2 0 0 0 3.464 0" />
-      <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
-    </svg>
-  )
-}
-
-export function InboxIcon({ className }: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      className={className}
-    >
-      <polyline points="22 12 16 12 14 15 10 15 8 12 2 12" />
-      <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
-    </svg>
-  )
-}
-
-export function ChevronDownIcon({ className }: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      className={className}
-    >
-      <path d="m6 9 6 6 6-6" />
-    </svg>
-  )
-}
-
-export function ChevronUpIcon({ className }: IconProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      className={className}
-    >
-      <path d="m18 15-6-6-6 6" />
+      <rect width="18" height="18" x="3" y="3" rx="2" />
+      <path d="M15 3v18" />
+      <path d="m8 9 3 3-3 3" />
     </svg>
   )
 }
@@ -334,9 +277,9 @@ export function SpinnerIcon({ className }: IconProps) {
     <div role="status">
       <svg
         aria-hidden="true"
-        className="inline w-6 h-6 animate-spin text-gray-600 fill-purple-800"
+        className={className}
         viewBox="0 0 100 101"
-        fill="none"
+        fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path

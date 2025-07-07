@@ -1,25 +1,12 @@
-import { UseFormRegister, FieldError } from 'react-hook-form'
+import type { FormSelectProps } from '@customTypes/types.ts'
 
-type Option = {
-  label: string
-  value: string
-}
-
-type FormSelectProps = {
-  label: string
-  options: Option[]
-  placeholder?: string
-  register: ReturnType<UseFormRegister<any>>
-  error?: FieldError
-}
-
-const FormSelect: React.FC<FormSelectProps> = ({
+const FormSelect = ({
   label,
   options,
   placeholder,
   register,
   error,
-}) => {
+}: FormSelectProps) => {
   return (
     <div>
       <label className="block text-sm font-medium text-gray-900 mb-2">

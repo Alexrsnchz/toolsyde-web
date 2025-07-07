@@ -2,7 +2,8 @@ import { useParams } from 'react-router'
 import QrCodeGenerator from 'src/tools/QrCodeGenerator'
 
 export default function ToolDetail() {
-  const { category, slug } = useParams()
+  const { slug } = useParams()
+  // const { category, slug } = useParams()
 
   switch (slug) {
     case 'qr-code':
