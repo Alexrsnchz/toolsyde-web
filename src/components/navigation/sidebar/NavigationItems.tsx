@@ -10,7 +10,10 @@ import { LogoIcon } from '@icons/Icons.tsx'
 
 export function Logo({ isExpanded }: SidebarProps) {
   return (
-    <NavLink to="/toolbox" className="flex justify-start items-center w-full rounded-md">
+    <NavLink
+      to="/toolbox"
+      className="flex justify-start items-center w-full rounded-md"
+    >
       <div className="p-1.5 rounded-md border border-transparent bg-neutral-900">
         <LogoIcon className="size-6 shrink-0 text-white" />
       </div>
