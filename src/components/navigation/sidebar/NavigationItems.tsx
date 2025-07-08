@@ -11,15 +11,15 @@ import { LogoIcon } from '@icons/Icons.tsx'
 export function Logo({ isExpanded }: SidebarProps) {
   return (
     <NavLink to="/toolbox" className="flex justify-start items-center w-full rounded-md">
-      <div className="p-2 rounded-md border border-transparent bg-neutral-900">
-        <LogoIcon className="size-5 shrink-0 text-white" />
+      <div className="p-1.5 rounded-md border border-transparent bg-neutral-900">
+        <LogoIcon className="size-6 shrink-0 text-white" />
       </div>
 
       <div
         className={`ml-3 overflow-hidden transition-all duration-300 ease-in-out 
         ${isExpanded ? 'max-w-[200px] opacity-100' : 'max-w-0 opacity-0'}`}
       >
-        <span className="block whitespace-nowrap text-lg font-semibold">
+        <span className="block whitespace-nowrap text-2xl font-bold">
           Toolsyde
         </span>
       </div>
