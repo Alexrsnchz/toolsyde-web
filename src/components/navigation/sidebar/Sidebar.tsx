@@ -1,5 +1,6 @@
-import { ContractedPanelIcon, ToolsydeIcon } from '@icons/Icons.tsx'
+import { ContractedPanelIcon } from '@icons/Icons.tsx'
 import {
+  Logo,
   Preferences,
   Utils,
 } from '@components/navigation/sidebar/NavigationItems.tsx'
@@ -20,15 +21,7 @@ export default function Sidebar() {
     >
       <nav className="flex flex-col justify-between px-3 py-5 h-full">
         <div>
-          <div className="flex justify-start items-center gap-3">
-            <div className="p-2 rounded-md bg-purple-500/40">
-              <ToolsydeIcon className="size-5 text-purple-800" />
-            </div>
-
-            {isExpanded && (
-              <span className="text-lg font-bold text-gray-800">Toolsyde</span>
-            )}
-          </div>
+          <Logo isExpanded={isExpanded} />
 
           <hr className="relative my-5 border-t-2 border-gray-300" />
 

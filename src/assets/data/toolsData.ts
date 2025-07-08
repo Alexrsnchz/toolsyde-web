@@ -1,11 +1,11 @@
-import { QrCodeIcon, ToolsydeIcon } from '@icons/Icons'
+import { QrCodeIcon, LogoIcon } from '@icons/Icons'
 
 export const toolsData = [
   {
     title: 'Mock Data Generator',
     description:
       'Generate realistic fake data for testing - users, products, addresses',
-    icon: ToolsydeIcon,
+    icon: LogoIcon,
     color: 'bg-blue-300',
     stats: '1.2k uses',
     category: 'Generator',
@@ -26,7 +26,7 @@ export const toolsData = [
     title: 'Regex Tester',
     description:
       'Test and validate regular expressions with real-time matching',
-    icon: ToolsydeIcon,
+    icon: LogoIcon,
     color: 'bg-purple-300',
     stats: '2.1k uses',
     category: 'Validator',
@@ -37,7 +37,7 @@ export const toolsData = [
     title: 'JSON Formatter',
     description:
       'Format, validate, and minify JSON data with syntax highlighting',
-    icon: ToolsydeIcon,
+    icon: LogoIcon,
     color: 'bg-orange-300',
     stats: '1.8k uses',
     category: 'Formatter',
