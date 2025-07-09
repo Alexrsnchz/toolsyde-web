@@ -1,4 +1,4 @@
-import { QrCodeIcon, LogoIcon } from '@icons/Icons'
+import { QrCodeIcon, LogoIcon, LicenseIcon } from '@icons/Icons'
 
 export const toolsData = [
   {
@@ -18,6 +18,16 @@ export const toolsData = [
     icon: QrCodeIcon,
     color: 'bg-green-300',
     stats: '856 uses',
+    category: 'Generator',
+    features: ['URLs', 'Text', 'WiFi', 'vCards'],
+    slug: 'qr-code',
+  },
+  {
+    title: 'License Generator',
+    description: 'Create customizable license keys for software products',
+    icon: LicenseIcon,
+    color: 'bg-red-300',
+    stats: '2.5k uses',
     category: 'Generator',
     features: ['URLs', 'Text', 'WiFi', 'vCards'],
     slug: 'qr-code',
