@@ -21,7 +21,7 @@ export default function useQr() {
     const { url, size } = data
 
     const encoded = encodeURIComponent(url.trim())
-    const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?data=${encoded}&size=${size}x${size}&margin=16&t=${Date.now()}`
+    const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?data=${encoded}&size=${size}x${size}&t=${Date.now()}`
 
     try {
       const response = await fetch(qrCodeUrl)
