@@ -3,7 +3,8 @@ import {
   CheckListIcon,
   FrameIcon,
   GeneratorIcon,
-  LayoutIcon, TransformIcon,
+  LayoutIcon,
+  TransformIcon,
 } from '@icons/Icons.tsx'
 
 export const utilsData = [

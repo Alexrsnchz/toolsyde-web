@@ -5,7 +5,9 @@ import {
   RegexIcon,
   PipetteIcon,
   SwatchIcon,
-  JsonFileIcon, BracketsIcon, GitIcon,
+  JsonFileIcon,
+  BracketsIcon,
+  GitIcon,
 } from '@icons/Icons.tsx'
 
 export const toolsData = [
@@ -34,7 +36,8 @@ export const toolsData = [
     icon: ScrollIcon,
     color: 'bg-red-300/60',
     title: 'License Picker',
-    description: 'Choose or create customizable license files for software products.',
+    description:
+      'Choose or create customizable license files for software products.',
     category: 'Generators',
     stats: '1.7k uses',
     features: ['MIT', 'Apache', 'GNU', 'Creative Commons'],
@@ -54,8 +57,7 @@ export const toolsData = [
     icon: JsonFileIcon,
     color: 'bg-red-300/60',
     title: 'Mock Data Generator',
-    description:
-      'Generate diverse fake data for testing applications.',
+    description: 'Generate diverse fake data for testing applications.',
     category: 'Generators',
     stats: '1.2k uses',
     features: ['Users', 'Products', 'Addresses', 'Custom Fields'],
