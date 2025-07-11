@@ -1,4 +1,4 @@
-import { UtilProps } from '@customTypes/navigationTypes.ts'
+import type { UtilProps } from '@customTypes/navigationTypes.ts'
 
 export default function Header({ icon: Icon, text }: UtilProps) {
   return (

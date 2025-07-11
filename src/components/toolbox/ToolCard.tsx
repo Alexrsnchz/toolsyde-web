@@ -1,16 +1,8 @@
-import { Tool } from '@customTypes/types'
+import { ToolCardProps } from '@customTypes/toolsTypes.ts'
 import { Link } from 'react-router'
 
-export default function ToolCard({
-  title,
-  description,
-  icon: Icon,
-  color,
-  stats,
-  category,
-  features,
-  slug,
-}: Tool) {
+export default function ToolCard({ category, slug, icon: Icon, color, title, description, stats, features,
+}: ToolCardProps) {
   return (
     <Link
       to={`${category.toLowerCase()}/${slug}`}

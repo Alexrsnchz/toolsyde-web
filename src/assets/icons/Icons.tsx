@@ -1,4 +1,4 @@
-import type { IconProps } from '@customTypes/types.ts'
+import type { IconProps } from '@customTypes/generalTypes.ts'
 
 export function LogoIcon({ className }: IconProps) {
   return (

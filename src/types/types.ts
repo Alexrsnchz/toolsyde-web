@@ -1,21 +1,4 @@
-import type * as React from 'react'
 import { FieldError, UseFormRegister } from 'react-hook-form'
-
-export interface IconProps {
-  id?: string
-  className?: string
-}
-
-export interface Tool {
-  title: string
-  description: string
-  icon: React.ComponentType<IconProps>
-  color: string
-  stats: string
-  category: string
-  features: string[]
-  slug: string
-}
 
 export interface QRFormInputs {
   url: string
