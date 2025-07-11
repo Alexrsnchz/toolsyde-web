@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router'
-import type { LinkUtilProps, UtilProps } from '@customTypes/sidebarTypes.ts'
+import type { LinkUtilProps, UtilProps } from '@customTypes/navigationTypes.ts'
 
 export function SideLink({
   icon: Icon,

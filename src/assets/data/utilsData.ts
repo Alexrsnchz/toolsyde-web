@@ -6,8 +6,9 @@ import {
   LayoutIcon,
   TransformIcon,
 } from '@icons/Icons.tsx'
+import { LinkUtilProps } from '@customTypes/navigationTypes.ts'
 
-export const utilsData = [
+export const utilsData: LinkUtilProps[] = [
   {
     icon: LayoutIcon,
     text: 'Toolbox',

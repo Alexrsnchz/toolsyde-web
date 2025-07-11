@@ -1,21 +1,12 @@
-import ToolCard from '@components/tools/ToolCard'
-import { Tool } from '@customTypes/types'
-import { toolsData } from '@data/toolsData'
-import { useState } from 'react'
+import ToolCard from '@components/toolbox/ToolCard.tsx'
+import { toolsData } from '@data/toolsData.ts'
 
-function Toolbox() {
-  const [tools, _setTools] = useState<Tool[]>(toolsData)
-
+export default function Toolbox() {
   return (
-    <div className="mx-auto max-w-6xl">
-      <h2 className="text-lg font-bold mb-4">Tools</h2>
-      <div className="grid grid-cols-2 gap-6">
-        {tools.map((tool) => (
-          <ToolCard {...tool} />
-        ))}
-      </div>
+    <div className="grid grid-cols-2 gap-6">
+      {toolsData.map((tool) => (
+        <ToolCard {...tool} />
+      ))}
     </div>
   )
 }
-
-export default Toolbox

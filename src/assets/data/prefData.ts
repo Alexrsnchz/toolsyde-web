@@ -1,5 +1,5 @@
 import { CogIcon, MoonIcon, SunIcon } from '@icons/Icons.tsx'
-import { SwitchTheme } from '@functions/SwitchTheme.ts'
+import { switchTheme } from '@functions/navigation/SwitchTheme.ts'
 
 const theme: string | null = localStorage.getItem('theme')
 
@@ -12,6 +12,6 @@ export const prefData = [
   {
     icon: theme === 'dark' ? MoonIcon : SunIcon,
     text: theme === 'dark' ? 'Dark theme' : 'Light theme',
-    handleClick: SwitchTheme,
+    handleClick: switchTheme,
   },
 ]

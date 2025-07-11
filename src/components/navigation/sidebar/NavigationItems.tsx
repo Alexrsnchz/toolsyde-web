@@ -1,5 +1,5 @@
 import { utilsData } from '@data/utilsData.ts'
-import { LinkUtilProps, SidebarProps } from '@customTypes/sidebarTypes.ts'
+import { LinkUtilProps, SidebarProps } from '@customTypes/navigationTypes.ts'
 import { prefData } from '@data/prefData.ts'
 import {
   SideButton,
