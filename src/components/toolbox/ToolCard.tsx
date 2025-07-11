@@ -1,7 +1,15 @@
 import { ToolCardProps } from '@customTypes/toolsTypes.ts'
 import { Link } from 'react-router'
 
-export default function ToolCard({ category, slug, icon: Icon, color, title, description, stats, features,
+export default function ToolCard({
+  category,
+  slug,
+  icon: Icon,
+  color,
+  title,
+  description,
+  stats,
+  features,
 }: ToolCardProps) {
   return (
     <Link

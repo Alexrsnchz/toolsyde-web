@@ -6,7 +6,7 @@ export default function ToolboxLayout() {
   const { category } = useParams()
 
   const path = category ? `/toolbox/${category}` : '/toolbox'
-  const categoryData = utilsData.find(item => item.link === path)
+  const categoryData = utilsData.find((item) => item.link === path)
 
   const headerText = categoryData?.text ?? 'Toolbox'
 
