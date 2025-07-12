@@ -11,6 +11,7 @@ export function SideLink({
     <NavLink
       to={link}
       aria-label={`Go to ${text} page`}
+      end={link === '/toolbox'}
       className={({ isActive }) =>
         `group flex items-center p-2 w-full rounded-md border transition-color duration-300 ease-in-out
         ${

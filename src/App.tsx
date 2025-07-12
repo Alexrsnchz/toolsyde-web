@@ -3,6 +3,7 @@ import MainLayout from '@components/layouts/MainLayout.tsx'
 import Toolbox from '@pages/Toolbox.tsx'
 import ToolboxLayout from '@components/layouts/ToolboxLayout.tsx'
 import ToolboxCategory from '@pages/ToolboxCategory.tsx'
+import ToolDetail from '@pages/ToolDetail'
 
 function App() {
   return (
@@ -12,7 +13,12 @@ function App() {
 
         <Route path="toolbox" element={<ToolboxLayout />}>
           <Route index element={<Toolbox />} />
-          <Route path=":category" element={<ToolboxCategory />} />
+
+          <Route path=":category">
+            <Route index element={<ToolboxCategory />} />
+
+            <Route path=":slug" element={<ToolDetail />} />
+          </Route>
         </Route>
       </Route>
     </Routes>

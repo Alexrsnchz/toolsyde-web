@@ -1,4 +1,5 @@
 import { ToolCardProps } from '@customTypes/toolsTypes.ts'
+import { getToolCategory } from '@data/categoriesData'
 import { Link } from 'react-router'
 
 export default function ToolCard({
@@ -11,9 +12,16 @@ export default function ToolCard({
   stats,
   features,
 }: ToolCardProps) {
+  const toolCategory = getToolCategory(category)
+
+  if (!toolCategory) {
+    console.error(`Category "${category}" not found for tool "${title}"`)
+    return null
+  }
+
   return (
     <Link
-      to={`${category.toLowerCase()}/${slug}`}
+      to={`/toolbox/${toolCategory?.slug}/${slug}`}
       aria-label={`Go to ${title} tool page`}
     >
       <article className="flex flex-col gap-4 border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md hover:cursor-pointer hover:-translate-y-1 transition-all duration-200">
