@@ -27,7 +27,7 @@ export default function QrCodeGenerator() {
 
   return (
     <section className="flex flex-col items-center justify-center h-full">
-      <article className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl w-full items-center">
+      <article className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-4xl w-full items-center">
         <QrFormSection
           register={register}
           handleSubmit={handleSubmit}

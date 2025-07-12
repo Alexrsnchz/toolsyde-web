@@ -16,10 +16,8 @@ export default function ToolboxLayout() {
     <>
       <Header icon={categoryData.icon} text={headerText} />
 
-      <section className="h-[calc(100vh-79.5px)] py-12">
-        <div className="mx-auto max-w-6xl">
-          <Outlet />
-        </div>
+      <section className="md:h-[calc(100vh-79.5px)] py-6 md:py-12 px-6 md:px-12 max-w-6xl mx-auto">
+        <Outlet />
       </section>
     </>
   )
