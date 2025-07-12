@@ -21,3 +21,9 @@ type SelectOptionProps = {
 export interface FormSelectProps extends FormInputProps {
   options: SelectOptionProps[]
 }
+
+export interface Category {
+  title: string
+  slug: string
+  color: string
+}
