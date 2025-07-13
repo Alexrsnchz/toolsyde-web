@@ -9,9 +9,7 @@ export default function NoToolsMessage({ category }: { category: string }) {
             <ToolsOffIcon className="h-8 w-8 text-gray-600" />
           </div>
 
-          <h3 className="font-semibold text-lg mb-2">
-            No {category} yet
-          </h3>
+          <h3 className="font-semibold text-lg mb-2">No {category} yet</h3>
 
           <p className="text-sm text-gray-600 mb-4 max-w-sm">
             {`We're working on adding ${category} tools to help with your development workflow.`}
