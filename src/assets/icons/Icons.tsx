@@ -558,7 +558,7 @@ export function PlusIcon({ className }: IconProps) {
   )
 }
 
-export function ToolsOff({ className }: IconProps) {
+export function ToolsOffIcon({ className }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
