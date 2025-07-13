@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router'
-import ToolCard from '@components/toolbox/ToolCard'
+import ToolsGrid from '@components/toolbox/ToolsGrid'
 import NoToolsMessage from '@components/toolbox/NoToolsMessage'
 import { getToolCategory } from '@data/categoriesData'
 import { toolsData } from '@data/toolsData'
@@ -28,11 +28,7 @@ export default function ToolboxCategory() {
   })
 
   return categoryTools.length > 0 ? (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {categoryTools.map((tool, index) => (
-        <ToolCard key={index} {...tool} />
-      ))}
-    </div>
+    <ToolsGrid tools={categoryTools} />
   ) : (
     <NoToolsMessage category={category} />
   )

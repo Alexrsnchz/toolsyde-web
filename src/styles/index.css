@@ -4,3 +4,12 @@
 body {
   font-family: 'Geist Variable', sans-serif;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
