@@ -22,6 +22,7 @@ export default function ToolCard({
   return (
     <Link
       to={`/toolbox/${toolCategory?.slug}/${slug}`}
+      data-cy={`tool-card-${slug}`}
       aria-label={`Go to ${title} tool page`}
     >
       <article className="flex flex-col gap-4 border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md hover:cursor-pointer hover:-translate-y-1 transition-all duration-200">

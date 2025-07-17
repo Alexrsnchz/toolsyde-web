@@ -36,6 +36,7 @@ export default function QrOutputSection({
               <img
                 src={qrBlobUrl}
                 alt={`Qr code for ${watch('url')}`}
+                data-cy="qr-code-image"
                 className="rounded-md w-30 mx-auto"
               />
             </div>

@@ -11,6 +11,7 @@ export interface FormInputProps {
   type?: string
   register: ReturnType<UseFormRegister<any>>
   error?: FieldError
+  dataCy?: string
 }
 
 type SelectOptionProps = {

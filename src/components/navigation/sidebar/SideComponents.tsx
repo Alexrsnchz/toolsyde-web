@@ -9,6 +9,7 @@ export function SideLink({
 }: LinkUtilProps) {
   return (
     <NavLink
+      data-cy={`category-${text.toLowerCase()}-link`}
       to={link}
       aria-label={`Go to ${text} page`}
       end={link === '/toolbox'}

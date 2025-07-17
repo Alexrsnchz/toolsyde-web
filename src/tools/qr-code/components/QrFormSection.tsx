@@ -56,6 +56,7 @@ export default function QrFormSection({
               required: 'URL or text is required',
             })}
             error={errors.url}
+            dataCy="qr-input-url"
           />
 
           <FormSelect
@@ -69,6 +70,7 @@ export default function QrFormSection({
         <div className="flex gap-2 mt-4">
           <button
             disabled={isLoading}
+            data-cy="generate-qr-button"
             className="inline-flex items-center justify-center gap-2 bg-black text-white whitespace-nowrap rounded-md text-sm font-medium disabled:pointer-events-none hover:cursor-pointer disabled:opacity-50 h-10 px-4 py-2 flex-1"
           >
             <QrCodeIcon className="size-4" />
