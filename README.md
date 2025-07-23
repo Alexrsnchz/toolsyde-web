@@ -18,7 +18,7 @@ https://toolsyde-web.vercel.app
 
 ## 🔗 Related
 
-You can check the API of Toolsyde by [clicking here](https://github.com/Alexrsnchz/toolsyde-api).
+You can check out Toolsyde’s API by [clicking here](https://github.com/Alexrsnchz/toolsyde-api).
 
 ## 👤 Authors
 
