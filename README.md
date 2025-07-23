@@ -10,6 +10,7 @@ https://toolsyde-web.vercel.app
 
 - Utilities from various categories like generators, validators, converters, UI tools, and resources like code snippets).
 - Dark / Light mode.
+- End-to-end testing with Cypress.
 - Authentication and user profile (coming soon...).
 
 ## 💻 Tech Stack
