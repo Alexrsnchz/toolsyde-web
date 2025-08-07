@@ -5,6 +5,10 @@ body {
   font-family: 'Geist Variable', sans-serif;
 }
 
+.mono {
+  font-family: 'Geist Mono Variable', monospace;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
