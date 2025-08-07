@@ -7,7 +7,6 @@ export function generateLicense(
   licenseType: LicenseType,
 ): string {
   const { company, year } = data
-  console.log({ licenseType })
   const templates = {
     mit,
     boost,
