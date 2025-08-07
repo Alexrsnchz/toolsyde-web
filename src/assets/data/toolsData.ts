@@ -33,7 +33,7 @@ export const toolsData = [
   },
   {
     category: 'Generators',
-    slug: 'license-generator',
+    slug: 'license',
     icon: ScrollIcon,
     color: 'bg-red-300/60',
     title: 'License Picker',
