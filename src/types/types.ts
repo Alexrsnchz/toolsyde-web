@@ -12,6 +12,7 @@ export interface FormInputProps {
   register: ReturnType<UseFormRegister<any>>
   error?: FieldError
   dataCy?: string
+  focus?: boolean
 }
 
 type SelectOptionProps = {
@@ -27,4 +28,20 @@ export interface Category {
   title: string
   slug: string
   color: string
+}
+
+export type LicenseWizardStep =
+  | 'initial'
+  | 'know-license'
+  | 'help-choose'
+  | 'generate'
+  | 'result'
+
+export interface LicenseFormInputs {
+  company: string
+  year: number
+}
+
+export interface LicenseType {
+  type: 'mit' | 'boost'
 }
